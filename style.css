@@ -197,15 +197,6 @@ nav.nav-main {
   padding: 0.25rem 0;
 }
 
-.menu > li > .nolink {
-  background-color: transparent;
-  border: none;
-  font-weight: 700;
-  color: var(--indigo);
-  font-size: 0.95rem;
-  cursor: pointer;
-  text-transform: uppercase;
-}
 
 .menu > li:hover > a {
   color: var(--indigo-dark);
