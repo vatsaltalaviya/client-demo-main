@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Know Your Kidneys — Sovin Kidney Clinic</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- HEADER (placeholder - integrate your real header if needed) -->
+    <header>
+    <nav class="nav-main">
+      <!-- Top Bar -->
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <div class="left">
+            <div class="row">
+              <i class="ri-map-pin-line"></i><span class="fw">SOVIN KIDNEY CLINIC, G 14/15, Race Course, Near MLA
+                Hostel</span>
+            </div>
+            <div class="row">
+              <i class="ri-phone-fill"></i><span class="fw">9548658489</span>
+            </div>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Navigation Row -->
+      <div class="container nav-row">
+        <div class="brand">
+          <img src="https://drbhavinbrahmbhatt.co.in/images/logo.png" alt="Logo" />
+        </div>
+
+        <button class="hamburger" id="menu-btn" aria-label="Open Menu" aria-expanded="false">
+          <i class="ri-menu-line"></i>
+        </button>
+
+        <!-- Desktop Menu -->
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./news-event.html">News Event</a></li>
+          <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+
+          <li>
+            <a class="nolink" href="./services.html">Services </a>
+          </li>
+          <li>
+            <a class="nolink" href="./kidney.html">About Kidney </a>
+          </li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menu (left-aligned drawer; CSS should handle .open) -->
+        <div class="mobile-menu" id="mobile-menu">
+          <a href="./index.html" class="mobile-link">Home</a>
+          <a href="./news-event.html" class="mobile-link">News Event</a>
+          <a href="./know-your-doctor.html" class="mobile-link">Know Your Doctor</a>
+          <a href="./services.html" class="mobile-link">Services</a>
+          <a href="./kidney.html" class="mobile-link">About Kidney</a>
+          <a href="./contact-us.html" class="mobile-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <!-- MAIN CONTAINER -->
+    <main style="max-width:1200px;margin:20px auto;padding:0 18px;">
+
+        <!-- HERO -->
+        <section id="home" aria-label="hero"
+            style="display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;padding:68px 18px;border-radius:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08);background:
+      linear-gradient(180deg, rgba(22,35,79,0.9) 0%, rgba(0,168,159,0.85) 100%),
+      url('https://images.unsplash.com/photo-1635776063302-85027eb18d8a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;color:#fff;margin-bottom:20px;">
+            <div>
+                <div
+                    style="display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.12);font-weight:700;color:#fff;margin-bottom:14px">
+                    Know Your Kidneys</div>
+                <h1 style="font-family:Poppins;font-size:40px;margin:0 0 10px;letter-spacing:-0.5px">Why kidneys matter
+                    — structure, function, prevention & treatment</h1>
+                <p style="opacity:0.95;max-width:62ch;margin:0 0 18px">Kidneys flush out harmful waste, maintain water
+                    and electrolyte balance and regulate blood pressure. Malfunction can cause life-threatening illness.
+                    This page covers structure, common diseases, prevention strategies, diagnosis, dialysis, and
+                    transplantation in clear, patient-friendly language.</p>
+
+                <div style="display:flex;gap:12px;flex-wrap:wrap">
+                    <button data-target="structure"
+                        style="display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:0;background:#00a89f;color:#fff;font-weight:700;cursor:pointer;box-shadow:0 8px 26px rgba(0,168,159,0.18)">Read
+                        Structure</button>
+                    <button data-target="prevention"
+                        style="display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:2px solid rgba(255,255,255,0.12);background:transparent;color:#fff;font-weight:700;cursor:pointer">Prevention
+                        Tips</button>
+                    <a href="#contact"
+                        style="display:inline-flex;align-items:center;padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.12);color:#fff;text-decoration:none;font-weight:700">Contact
+                        Clinic</a>
+                </div>
+
+                <div style="margin-top:14px;color:rgba(255,255,255,0.9);font-size:13px">Tip: Use the next / previous
+                    buttons at bottom-right to move through sections quickly.</div>
+            </div>
+
+            <div
+                style="background:#fff;padding:18px;border-radius:12px;color:#16234f;box-shadow:0 10px 30px rgba(10,20,40,0.08);min-width:260px">
+                <img src="./image/dr_bhavin.png"
+                    alt="Dr Bhavin Brahmbhatt" style="width:100%;height:360px;object-fit:contain;border-radius:10px">
+                <div style="margin-top:12px;font-weight:700">Dr Bhavin Brahmbhatt</div>
+                <div style="color:#6b7280;font-size:14px;margin-top:4px">Consultant Nephrologist & Transplant Physician
+                </div>
+            </div>
+        </section>
+
+        <!-- Structure -->
+        <section id="structure"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Structure of the Kidney</h2>
+            <div style="display:grid;grid-template-columns:1fr 360px;gap:26px;align-items:start">
+                <div>
+                    <p style="font-weight:700;color:#16234f;margin:8px 0">How kidneys work</p>
+                    <p style="color:#6b7280;margin:0 0 10px">The kidney produces urine by removing toxic waste products
+                        and excess water from the blood. Urine formed in each kidney passes through the ureter, flows
+                        into bladder before finally being excreted through the urethra.</p>
+
+                    <details open style="margin-top:12px">
+                        <summary style="font-weight:700;cursor:pointer">Anatomical & measurable facts</summary>
+                        <p style="color:#6b7280;margin-top:8px">Most adults (males and females) have two kidneys. Each
+                            kidney is bean-shaped — approximately 10 cm long, 6 cm wide and 4 cm thick, weighing
+                            ~150–170 g. The ureter is about 25 cm long. The adult bladder holds about 400–500 ml of
+                            urine.</p>
+                        <p style="color:#6b7280">Kidneys are located high and to the back side of the abdomen, on either
+                            side of the spine and are protected by the lower ribs. They lie deep inside the abdomen, so
+                            usually cannot be felt.</p>
+                    </details>
+
+                    <h4 style="margin-top:12px">Primary functions</h4>
+                    <ul style="list-style:none;padding:0;margin:8px 0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Remove toxic wastes (urea,
+                            creatinine)</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Maintain fluid & electrolyte (sodium,
+                            potassium) balance</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Regulate blood pressure and acid-base
+                            balance</li>
+                    </ul>
+                </div>
+
+                <aside
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04);color:#16234f">
+                    <h4 style="margin:0 0 8px">Quick facts</h4>
+                    <div style="display:flex;gap:12px;flex-wrap:wrap">
+                        <div
+                            style="flex:1;min-width:120px;padding:12px;border-radius:10px;background:linear-gradient(90deg,rgba(0,168,159,0.06),rgba(107,63,160,0.03));text-align:center">
+                            <small style="display:block;color:#6b7280">Avg Size</small>
+                            <strong style="display:block;color:#16234f">10 × 6 × 4 cm</strong>
+                        </div>
+                        <div
+                            style="flex:1;min-width:120px;padding:12px;border-radius:10px;background:linear-gradient(90deg,rgba(0,168,159,0.06),rgba(107,63,160,0.03));text-align:center">
+                            <small style="display:block;color:#6b7280">Avg Weight</small>
+                            <strong style="display:block;color:#16234f">150–170 g</strong>
+                        </div>
+                    </div>
+
+                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80"
+                            alt="anatomy" style="width:100%;height:86px;object-fit:cover;border-radius:8px">
+                        <img src="https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=800&q=80"
+                            alt="lab" style="width:100%;height:86px;object-fit:cover;border-radius:8px">
+                        <img src="https://images.unsplash.com/photo-1551601651-6c6b0f3fb2b0?auto=format&fit=crop&w=800&q=80"
+                            alt="scan" style="width:100%;height:86px;object-fit:cover;border-radius:8px">
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Major Diseases -->
+        <section id="diseases"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Major Kidney Disease</h2>
+            <p style="color:#6b7280;margin:0 0 12px">Common conditions include kidney failure (acute & chronic), urinary
+                stones, infections, uncontrolled blood pressure related kidney disease, diabetes-related kidney disease
+                and pediatric kidney diseases.</p>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+                <div
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                    <h4 style="margin:0 0 8px">Kidney Failure</h4>
+                    <p style="color:#6b7280;margin:0 0 8px">Kidneys are no longer able to remove waste effectively. The
+                        build up of waste products changes the body's chemistry causing symptoms. There are two types:
+                        Acute kidney failure and Chronic kidney disease.</p>
+
+                    <details style="margin-top:10px">
+                        <summary style="font-weight:700;cursor:pointer">Acute Kidney Failure</summary>
+                        <p style="color:#6b7280;margin-top:8px">Acute means sudden failure often due to infections,
+                            toxins, severe dehydration or blood loss. Usually temporary — kidneys may recover if cause
+                            is treated.</p>
+                    </details>
+
+                    <details style="margin-top:8px">
+                        <summary style="font-weight:700;cursor:pointer">Chronic Kidney Failure</summary>
+                        <p style="color:#6b7280;margin-top:8px">Gradual progressive and irreversible loss of kidney
+                            function over months to years. May lead to complete kidney failure requiring dialysis or
+                            transplant.</p>
+                    </details>
+                </div>
+
+                <div
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                    <h4 style="margin:0 0 8px">Other conditions</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Urinary stone disease — pain,
+                            obstruction, infections</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Urinary tract infections (UTI)</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Diabetes-related kidney disease</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Hypertensive kidney damage</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Kidney disease in children</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top:14px;border-radius:12px;overflow:hidden">
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <img src="https://images.unsplash.com/photo-1622219776988-d05d37e0f67e?auto=format&fit=crop&w=800&q=80"
+                        alt="clinic" style="width:100%;max-width:48%;height:220px;object-fit:cover;border-radius:10px">
+                    <img src="https://images.unsplash.com/photo-1622219777266-29e77b36f598?auto=format&fit=crop&w=800&q=80"
+                        alt="team" style="width:100%;max-width:48%;height:220px;object-fit:cover;border-radius:10px">
+                </div>
+            </div>
+        </section>
+
+        <!-- Prevention -->
+        <section id="prevention"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Prevention of Kidney Disease</h2>
+            <p style="color:#6b7280;margin:0 0 12px">Kidney diseases are silent killers. Early detection and treatment
+                can often keep CKD from getting worse, and can prevent or delay the need for definitive therapy.</p>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+                <div
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                    <h4 style="margin:0 0 8px">Precautions for Healthy Person</h4>
+                    <ol style="padding-left:18px;color:#6b7280;line-height:1.7">
+                        <li style="margin-bottom:8px"><strong>Be fit and active:</strong> Regular aerobic exercise
+                            maintains normal blood pressure and controls blood sugar.</li>
+                        <li style="margin-bottom:8px"><strong>Balanced diet</strong></li>
+                        <li style="margin-bottom:8px"><strong>Keep your weight in check</strong></li>
+                        <li style="margin-bottom:8px"><strong>Give up smoking and tobacco products</strong></li>
+                        <li style="margin-bottom:8px"><strong>Beware of OTCs</strong> — avoid prolonged painkiller use
+                            without medical advice.</li>
+                        <li style="margin-bottom:8px"><strong>Drink lots of water</strong></li>
+                        <li style="margin-bottom:8px"><strong>Annual kidney check-up</strong></li>
+                    </ol>
+                </div>
+
+                <div
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                    <h4 style="margin:0 0 8px">Precautions for Kidney Patients</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Awareness and early diagnosis — watch
+                            for swelling, loss of appetite, nausea, frequent urination, blood or protein in urine</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Precautions in diabetic and
+                            hypertensive patients</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Early diagnosis of polycystic kidney
+                            disease</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Treat recurrent UTIs and manage BPH
+                            appropriately</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Cautious use of medicines and special
+                            care for solitary kidney</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diagnosis -->
+        <section id="diagnosis"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Diagnosis of Kidney Diseases</h2>
+            <p style="color:#6b7280;margin:0 0 12px">Many early stages of CKD are asymptomatic — laboratory tests are
+                key. Early diagnosis allows appropriate treatment and can delay progression to ESKD.</p>
+
+            <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
+                <div>
+                    <h4 style="margin:0 0 8px">Who should get checked?</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">People with diabetes or hypertension
+                        </li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Family history of kidney disease</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Frequent urinary infections or
+                            hematuria</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Long-term painkiller use</li>
+                    </ul>
+
+                    <h4 style="margin-top:12px">Screening & tests</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Blood tests: Creatinine, Urea,
+                            Electrolytes, Hemoglobin</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Urine tests: Routine &
+                            protein/albumin</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Imaging: Ultrasound of the kidneys
+                        </li>
+                    </ul>
+                </div>
+
+                <aside
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04);color:#16234f">
+                    <h4 style="margin:0 0 8px">Symptoms to watch for</h4>
+                    <p style="color:#6b7280;margin:0">Swelling of face, feet and sometimes all over body; loss of
+                        appetite; nausea and vomiting; high blood pressure; paleness due to low hemoglobin; fatigue;
+                        blood or protein in urine.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Treatment -->
+        <section id="treatment"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Treatment of Chronic Kidney Disease</h2>
+            <p style="color:#6b7280;margin:0 0 12px">Treatment options: medical management, dialysis, or transplant.
+                Most patients start with medical management — medicine, dietary advice and monitoring — to slow
+                progression.</p>
+
+            <details style="margin-top:8px">
+                <summary style="font-weight:700;cursor:pointer">Why medical management is important</summary>
+                <p style="color:#6b7280;margin-top:8px">Early conservative therapy can delay or prevent the need for
+                    dialysis/transplant. Many patients remain well on appropriate therapy; discontinuing therapy may
+                    lead to rapid worsening.</p>
+            </details>
+
+            <h4 style="margin-top:12px">Goals of medical management</h4>
+            <ul style="list-style:none;padding:0;margin:8px 0;color:#6b7280">
+                <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Slow disease progression</li>
+                <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Treat underlying causes & complications</li>
+                <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Reduce cardiovascular risk</li>
+                <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Delay need for dialysis or transplant</li>
+            </ul>
+
+            <h4 style="margin-top:12px">Lifestyle & general measures</h4>
+            <p style="color:#6b7280;margin:0 0 12px">Stop smoking, maintain healthy weight, limit alcohol, follow a
+                healthy eating plan with salt reduction, take medications as directed, and have regular follow-up with a
+                nephrologist.</p>
+
+            <div
+                style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                <h4 style="margin:0 0 8px">Dietary restrictions</h4>
+                <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7"><strong>Salt:</strong> Restrict added &
+                        processed salt</li>
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7"><strong>Fluid:</strong> Restrict fluids
+                        if urine output is low/swelling present</li>
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7"><strong>Potassium:</strong> Limit
+                        potassium-rich foods when advised</li>
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7"><strong>Protein:</strong> Avoid
+                        high-protein diets unless advised by specialist</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Dialysis -->
+        <section id="dialysis"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Dialysis — Meaning & Indication</h2>
+            <p style="color:#6b7280;margin:0 0 12px">Dialysis removes waste products and excess water artificially when
+                kidneys fail. It is life-saving for End Stage Kidney Disease (ESKD) or severe acute kidney injury until
+                recovery or transplant.</p>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px">
+                <div
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                    <h4 style="margin:0 0 8px">How dialysis helps</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Purifies blood by removing creatinine
+                            & urea</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Removes excess fluid</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Corrects electrolytes and acid-base
+                            balance</li>
+                    </ul>
+                    <p style="color:#6b7280;margin-top:8px">Dialysis cannot replace all kidney functions such as hormone
+                        production (e.g., erythropoietin).</p>
+                </div>
+
+                <div
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04)">
+                    <h4 style="margin:0 0 8px">Types of dialysis</h4>
+                    <p style="color:#6b7280;margin:0 0 8px"><strong>Hemodialysis (HD):</strong> Blood is passed through
+                        a dialyzer (artificial kidney) using a dialysis machine. Usually performed in a center ~3
+                        times/week for ~4 hours each session.</p>
+                    <p style="color:#6b7280;margin:0"><strong>Peritoneal Dialysis (PD):</strong> Dialysis fluid uses the
+                        peritoneal membrane to remove wastes; can be done at home (CAPD/CCPD/IPD).</p>
+                </div>
+            </div>
+
+            <div
+                style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04);margin-top:12px">
+                <h4 style="margin:0 0 8px">Vascular access for hemodialysis</h4>
+                <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Central venous catheters</li>
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Native arteriovenous (AV) fistula
+                        (preferred long-term option)</li>
+                    <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Synthetic grafts</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Transplant -->
+        <section id="transplant"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:18px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Kidney Transplant</h2>
+            <p style="color:#6b7280;margin:0 0 12px">Kidney transplantation is a major advance and often the treatment
+                of choice for ESKD — it may offer better quality of life and survival compared with dialysis.</p>
+
+            <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
+                <div>
+                    <h4 style="margin:0 0 8px">When & why transplant?</h4>
+                    <p style="color:#6b7280;margin:0 0 8px">When kidney function declines to the point that dialysis is
+                        required or in pre-emptive cases approaching ESKD. Not indicated for acute kidney injury
+                        expected to recover.</p>
+                    <h4 style="margin-top:12px">Advantages</h4>
+                    <ul style="list-style:none;padding:0;margin:8px 0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Better replacement of renal functions
+                        </li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Freedom from dialysis</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Longer life expectancy compared to
+                            remaining on dialysis</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Lesser dietary & fluid restrictions
+                            eventually</li>
+                    </ul>
+                </div>
+
+                <aside
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04);color:#16234f">
+                    <h4 style="margin:0 0 8px">Types of transplant</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7"><strong>Living donor:</strong> Kidney
+                            from a living person (relative or non-relative)</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7"><strong>Deceased donor:</strong>
+                            Cadaveric donor — may require long wait-list times</li>
+                    </ul>
+
+                    <h4 style="margin-top:8px">Special topics</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:#6b7280">
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Paired kidney exchange (paired
+                            donation)</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">ABO incompatible transplant with
+                            special protocols</li>
+                        <li style="padding:8px 0;border-bottom:1px dashed #eef4f7">Thorough pre-op donor/recipient
+                            evaluation</li>
+                    </ul>
+                </aside>
+            </div>
+
+            <details style="margin-top:12px">
+                <summary style="font-weight:700;cursor:pointer">Steps before living donor transplantation</summary>
+                <ol style="margin-top:8px;color:#6b7280;line-height:1.7">
+                    <li>Voluntary willingness and consent</li>
+                    <li>Thorough history, physical exam, lab & radiological evaluation</li>
+                    <li>Authorization committee permissions (local rules)</li>
+                </ol>
+            </details>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact"
+            style="background:#fff;border-radius:14px;padding:28px;margin-bottom:28px;box-shadow:0 10px 30px rgba(18,35,63,0.08)">
+            <h2 style="margin:0 0 8px;color:#16234f;font-family:Poppins">Contact & Resources</h2>
+            <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
+                <div>
+                    <p style="color:#6b7280;margin:0 0 8px">Dr Bhavin Brahmbhatt — Consultant Nephrologist & Transplant
+                        Physician at Sovin Kidney Clinic</p>
+                    <p style="font-weight:700;color:#16234f;margin:0 0 4px">Sovin Kidney Clinic</p>
+                    <p style="color:#6b7280;margin:0 0 4px">G 14/15, Race Course, Near MLA Hostel</p>
+                    <p style="color:#6b7280;margin:0 0 10px">Phone: <strong>9548658489</strong></p>
+
+                    <div style="display:flex;gap:10px;flex-wrap:wrap">
+                        <a href="tel:+919548658489"
+                            style="display:inline-flex;align-items:center;padding:12px 14px;border-radius:12px;background:#00a89f;color:#fff;font-weight:700;text-decoration:none">Call
+                            Clinic</a>
+                        <a href="#"
+                            style="display:inline-flex;align-items:center;padding:12px 14px;border-radius:12px;background:#eefbfa;color:#16234f;text-decoration:none;font-weight:700">Book
+                            Appointment</a>
+                        <a href="#" download
+                            style="display:inline-flex;align-items:center;padding:12px 14px;border-radius:10px;background:#6b3fa0;color:#fff;text-decoration:none;font-weight:700">Download
+                            Brochure</a>
+                    </div>
+                </div>
+
+                <aside
+                    style="background:linear-gradient(180deg,#fff,#fbfeff);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(12,20,40,0.04);color:#16234f">
+                    <h4 style="margin:0 0 8px">Quick links</h4>
+                    <div style="display:flex;flex-direction:column;gap:6px">
+                        <a href="#structure" style="color:#00a89f;text-decoration:none">Know Your Kidneys</a>
+                        <a href="#diseases" style="color:#00a89f;text-decoration:none">Major Kidney Disease</a>
+                        <a href="#prevention" style="color:#00a89f;text-decoration:none">Prevention</a>
+                        <a href="#diagnosis" style="color:#00a89f;text-decoration:none">Diagnosis</a>
+                        <a href="#treatment" style="color:#00a89f;text-decoration:none">Treatment</a>
+                        <a href="#dialysis" style="color:#00a89f;text-decoration:none">Dialysis</a>
+                        <a href="#transplant" style="color:#00a89f;text-decoration:none">Kidney Transplant</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+   
+    <!-- Floating scroll controls -->
+    <div style="position:fixed;right:18px;bottom:22px;display:flex;flex-direction:column;gap:10px;z-index:999">
+        <button id="prev" title="Previous section" aria-label="Previous section"
+            style="width:52px;height:52px;border-radius:12px;border:0;background:linear-gradient(180deg,#00a89f,#00c2b6);color:#fff;font-size:18px;cursor:pointer;box-shadow:0 8px 26px rgba(0,168,159,0.16)">◀</button>
+        <button id="next" title="Next section" aria-label="Next section"
+            style="width:52px;height:52px;border-radius:12px;border:0;background:linear-gradient(180deg,#00a89f,#00c2b6);color:#fff;font-size:18px;cursor:pointer;box-shadow:0 8px 26px rgba(0,168,159,0.16)">▶</button>
+    </div>
+
+    <!-- Progress label -->
+    <div id="progress"
+        style="position:fixed;left:18px;bottom:22px;background:rgba(255,255,255,0.95);padding:10px;border-radius:12px;box-shadow:0 8px 30px rgba(8,20,40,0.06);font-size:13px;color:#6b7280;z-index:999">
+        Section 1 / 8
+    </div>
+
+    <footer class="container">
+    <div class="footer-wrap">
+      <div class="footer-grid">
+        <div style="width: 130px; margin-inline: auto">
+          <img src="https://drbhavinbrahmbhatt.co.in/images/footer_logo.png" alt="Footer Logo" />
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="./brochure-aboutyourkidney.pdf" target="_blank" download>Brochure About Kidney</a></li>
+            <li><a href="./brochure-Kidney-Transplant-Brochure.pdf" target="_blank" download>Brochure Kidney Transplant</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contact Information</h3>
+          <ul class="footer-contact">
+            <li>
+              <span style="font-weight: 600">Address Dehradun:</span>
+              <address>
+                SOVIN KIDNEY CLINIC, G 14/15, Race Course, Near MLA Hostel
+              </address>
+            </li>
+            <li>
+              <span style="font-weight: 600">Address Indore:</span>
+              <address>
+                Sovin Clinics, Above JMB Sweets, MIG Main Road, Indore
+              </address>
+            </li>
+            <li>
+              <span style="font-weight: 600">Address Ujjain:</span>
+              <address>Avanti Hospital (old CHL hospital), Ujjain</address>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Get in Touch</h3>
+          <ul class="footer-contact">
+            <li>
+              <span style="font-weight: 600">Mobile:</span><br />
+              <a href="tel:+919548658489">9548658489</a> (Dehradun)<br />
+              <a href="tel:+916269217762">6269217762</a> (Indore)<br />
+              <a href="tel:+917354714740">7354714740</a> (Ujjain)
+            </li>
+            <li>
+              <span style="font-weight: 600">Email:</span><br />
+              <a href="mailto:bhavin_4@yahoo.com">bhavin_4@yahoo.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        2025 © Dr Bhavin Brahmbhatt. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+    <!-- Inline JS for behavior -->
+    <script>
+        (function () {
+            // Collect main sections inside <main>
+            const sections = Array.from(document.querySelectorAll('main > section'));
+            let idx = 0;
+            const progress = document.getElementById('progress');
+
+            function updateProgress() {
+                const label = sections[idx] && sections[idx].querySelector('h2') ? sections[idx].querySelector('h2').innerText : 'Home';
+                progress.textContent = 'Section ' + (idx + 1) + ' / ' + sections.length + ' — ' + label;
+            }
+
+            function goTo(i) {
+                idx = Math.max(0, Math.min(sections.length - 1, i));
+                sections[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setTimeout(updateProgress, 400);
+            }
+
+            document.getElementById('next').addEventListener('click', function () { goTo(idx + 1); });
+            document.getElementById('prev').addEventListener('click', function () { goTo(idx - 1); });
+
+            // Hero CTA buttons
+            document.querySelectorAll('button[data-target]').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const target = this.getAttribute('data-target');
+                    if (!target) return;
+                    const el = document.getElementById(target);
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        idx = sections.indexOf(el);
+                        setTimeout(updateProgress, 400);
+                    }
+                });
+            });
+
+            // Intersection observer to detect visible section and add fade-in class
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'none';
+                        const secIndex = sections.indexOf(entry.target);
+                        if (secIndex !== -1) idx = secIndex;
+                        updateProgress();
+                    }
+                });
+            }, { threshold: 0.22 });
+
+            // Initially make sections slightly translated + transparent for subtle entrance
+            sections.forEach(s => {
+                s.style.opacity = 0;
+                s.style.transform = 'translateY(18px)';
+                s.style.transition = 'all 0.8s cubic-bezier(.2,.9,.25,1)';
+                io.observe(s);
+            });
+
+            // Basic accordion behavior for custom .acc-head elements
+            document.querySelectorAll('.acc-head').forEach(head => {
+                head.addEventListener('click', function () {
+                    const body = head.nextElementSibling;
+                    if (!body) return;
+                    const open = body.style.display === 'block';
+                    // close all
+                    document.querySelectorAll('.acc-body').forEach(b => b.style.display = 'none');
+                    document.querySelectorAll('.acc-head div:last-child').forEach(x => { if (x) x.textContent = '+'; });
+                    if (!open) {
+                        body.style.display = 'block';
+                        const plus = head.querySelector('div:last-child');
+                        if (plus) plus.textContent = '\u2212'; // minus
+                    }
+                });
+            });
+
+            // Update idx on manual scroll (debounced)
+            let scrollTimer;
+            window.addEventListener('scroll', function () {
+                clearTimeout(scrollTimer);
+                scrollTimer = setTimeout(function () {
+                    let closest = 0, minDist = Infinity;
+                    sections.forEach((s, i) => {
+                        const rect = s.getBoundingClientRect();
+                        const dist = Math.abs(rect.top - 80);
+                        if (dist < minDist) { minDist = dist; closest = i; }
+                    });
+                    idx = closest;
+                    updateProgress();
+                }, 120);
+            });
+
+            // initial progress
+            updateProgress();
+        })();
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
