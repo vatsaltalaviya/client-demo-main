@@ -159,12 +159,12 @@ nav.nav-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 10rem;
+  padding: 1rem 4rem;
   position: relative;
 }
 
 .brand {
-  width: 200px;
+  width: 160px;
 }
 
 .hamburger {
@@ -174,33 +174,114 @@ nav.nav-main {
   color: var(--indigo);
   display: none;
 }
-
-/* ============ Desktop Menu ============ */
+/* ===============================
+   Clean Professional Menu Styling
+   =============================== */
 .menu {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--indigo);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 10;
 }
 
+/* Each menu item */
 .menu > li {
   list-style: none;
   position: relative;
 }
 
+/* Link base style */
 .menu > li > a,
 .menu > li > .nolink {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.25rem 0;
+  padding: 0.4rem 0;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-
+/* Hover color change */
 .menu > li:hover > a {
-  color: var(--indigo-dark);
+  color: var(--indigo-dark, #0c2255);
 }
+
+/* Animated underline */
+.menu > li > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--indigo-dark, #0c2255), #00a89f);
+  transition: width 0.35s ease;
+  border-radius: 2px;
+}
+
+.menu > li:hover > a::after {
+  width: 100%;
+}
+
+/* Optional: active page indicator */
+.menu > li.active > a {
+  color: var(--indigo-dark, #0c2255);
+}
+.menu > li.active > a::after {
+  width: 100%;
+}
+
+/* Slight hover background for better UX */
+.menu > li:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+/* Optional: subtle text glow (for dark header only) */
+.dark-header .menu > li:hover > a {
+  text-shadow: 0 0 6px rgba(0, 168, 159, 0.35);
+}
+
+/* ============ Responsive Menu ============ */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .menu > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu > li > a {
+    display: block;
+    padding: 0.6rem 0;
+    font-size: 15px;
+  }
+
+  .menu > li > a::after {
+    display: none; /* cleaner for mobile */
+  }
+
+  .menu > li:hover {
+    background: rgba(0, 168, 159, 0.08);
+  }
+}
+
 
 /* ============ Desktop Dropdown ============ */
 .dropdown {
@@ -786,7 +867,7 @@ address {
 .page-hero {
   background: var(--hero);
   color: #fff;
-  padding: 48px 0;
+  padding: 14px 0;
 }
 
 .page-hero h1 {

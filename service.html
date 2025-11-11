@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Service — Sovin Kidney Clinic</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body
+    style="margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto;color:#142032;background:linear-gradient(180deg,#fbfefe 0%,#f0fbfb 100%);">
+
+
+
+    <header>
+        <nav class="nav-main">
+            <!-- Top Bar -->
+            <div class="topbar">
+                <div class="container topbar-inner">
+                    <div class="left">
+                        <div class="row">
+                            <i class="ri-map-pin-line"></i><span class="fw">SOVIN KIDNEY CLINIC, G 14/15, Race Course,
+                                Near MLA
+                                Hostel</span>
+                        </div>
+                        <div class="row">
+                            <i class="ri-phone-fill"></i><span class="fw">9548658489</span>
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Navigation Row -->
+            <div class="container nav-row">
+                <div class="brand">
+                    <img src="https://drbhavinbrahmbhatt.co.in/images/logo.png" alt="Logo" />
+                </div>
+
+                <button class="hamburger" id="menu-btn" aria-label="Open Menu" aria-expanded="false">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news-event.html">News Event</a></li>
+                    <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+
+                    <li>
+                        <a class="nolink" href="./services.html">Services </a>
+                    </li>
+                    <li>
+                        <a class="nolink" href="./kidney.html">About Kidney </a>
+                    </li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+
+                <!-- Mobile Menu (left-aligned drawer; CSS should handle .open) -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <a href="./index.html" class="mobile-link">Home</a>
+                    <a href="./news-event.html" class="mobile-link">News Event</a>
+                    <a href="./know-your-doctor.html" class="mobile-link">Know Your Doctor</a>
+                    <a href="./services.html" class="mobile-link">Services</a>
+                    <a href="./kidney.html" class="mobile-link">About Kidney</a>
+                    <a href="./contact-us.html" class="mobile-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Header -->
+    <header style="padding:18px;background:linear-gradient(90deg,#06204a,#003c45);color:#fff;">
+        <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;align-items:center;gap:12px">
+                <div
+                    style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#6b3fa0,#00a89f);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:Poppins">
+                    SK</div>
+                <div>
+                    <div style="font-weight:700;font-family:Poppins;font-size:16px">Sovin Kidney Clinic</div>
+                    <div style="font-size:13px;opacity:0.9">Expert Nephrology & Transplant Care</div>
+                </div>
+            </div>
+            <div>
+                <a href="services.html"
+                    style="padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.12);color:#fff;text-decoration:none;font-weight:700">←
+                    Back to Services</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="max-width:1000px;margin:22px auto;padding:0 18px;">
+
+        <section id="hero"
+            style="background:#fff;border-radius:12px;padding:18px;box-shadow:0 10px 34px rgba(12,20,40,0.06);display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+            <div style="flex:1;min-width:260px">
+                <h1 id="serviceTitle" style="font-family:Poppins;margin:0 0 8px;font-size:26px;color:#16234f">Service
+                </h1>
+                <p id="serviceIntro" style="color:#6b7280;margin:0 0 12px">Loading...</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <a id="callBtn" href="tel:+919548658489"
+                        style="padding:10px 14px;border-radius:10px;background:#00a89f;color:#fff;text-decoration:none;font-weight:700">Call
+                        Clinic</a>
+                    <a id="bookBtn" href="#"
+                        style="padding:10px 14px;border-radius:10px;border:1px solid #e6eef0;background:#fff;color:#16234f;text-decoration:none;font-weight:700">Book
+                        Appointment</a>
+                </div>
+            </div>
+            <div id="heroImage"
+                style="width:360px;min-width:220px;display:flex;align-items:center;justify-content:center">
+                <img id="serviceImg" src="" alt=""
+                    style="width:100%;height:200px;object-fit:cover;border-radius:10px;box-shadow:0 10px 30px rgba(10,20,40,0.08)">
+            </div>
+        </section>
+
+        <section id="content"
+            style="margin-top:18px;background:#fff;padding:18px;border-radius:12px;box-shadow:0 10px 34px rgba(12,20,40,0.06);min-height:300px">
+            <div id="serviceContent" style="color:#6b7280;line-height:1.7">
+                Loading service details...
+            </div>
+        </section>
+
+        <!-- Related services -->
+        <section style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:12px">
+            <h3 style="margin:0;font-family:Poppins;color:#16234f">Related Services</h3>
+            <a href="services.html" style="color:#00a89f;text-decoration:none;font-weight:700">View all services</a>
+        </section>
+
+        <section id="related" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:12px"></section>
+
+    </main>
+
+    <footer class="container">
+        <div class="footer-wrap">
+            <div class="footer-grid">
+                <div style="width: 130px; margin-inline: auto">
+                    <img src="https://drbhavinbrahmbhatt.co.in/images/footer_logo.png" alt="Footer Logo" />
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                        <li><a href="./brochure-aboutyourkidney.pdf" target="_blank" download>Brochure About Kidney</a>
+                        </li>
+                        <li><a href="./brochure-Kidney-Transplant-Brochure.pdf" target="_blank" download>Brochure Kidney
+                                Transplant</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Contact Information</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <span style="font-weight: 600">Address Dehradun:</span>
+                            <address>
+                                SOVIN KIDNEY CLINIC, G 14/15, Race Course, Near MLA Hostel
+                            </address>
+                        </li>
+                        <li>
+                            <span style="font-weight: 600">Address Indore:</span>
+                            <address>
+                                Sovin Clinics, Above JMB Sweets, MIG Main Road, Indore
+                            </address>
+                        </li>
+                        <li>
+                            <span style="font-weight: 600">Address Ujjain:</span>
+                            <address>Avanti Hospital (old CHL hospital), Ujjain</address>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <span style="font-weight: 600">Mobile:</span><br />
+                            <a href="tel:+919548658489">9548658489</a> (Dehradun)<br />
+                            <a href="tel:+916269217762">6269217762</a> (Indore)<br />
+                            <a href="tel:+917354714740">7354714740</a> (Ujjain)
+                        </li>
+                        <li>
+                            <span style="font-weight: 600">Email:</span><br />
+                            <a href="mailto:bhavin_4@yahoo.com">bhavin_4@yahoo.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                2025 © Dr Bhavin Brahmbhatt. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            // service data (same IDs as services.html)
+            const services = {
+                "kidney-transplant": {
+                    title: "Kidney Transplantation",
+                    image: "https://images.unsplash.com/photo-1580281657523-2a9b077e6b6a?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Definitive treatment for end-stage kidney disease — transplantation may restore near-normal life and reduce long-term restrictions.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Overview</h3>
+        <p>Kidney transplantation replaces a failing kidney with a healthy one from a living or deceased donor. It can offer improved life expectancy and quality of life compared to long-term dialysis.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Who is eligible?</h4>
+        <p>Patients with irreversible kidney failure (ESKD), who are medically fit and without active infection or uncontrolled illness. Evaluation includes blood tests, imaging and cardiac clearance.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Types of transplant</h4>
+        <ul>
+          <li><strong>Living donor:</strong> Often best outcomes; planned surgery.</li>
+          <li><strong>Deceased donor:</strong> Requires waiting list and matching.</li>
+          <li><strong>Paired exchange & ABO incompatible:</strong> Advanced options for incompatible donors.</li>
+        </ul>
+
+        <h4 style="color:#16234f;margin-top:12px">What to expect</h4>
+        <p>Pre-transplant evaluation, surgery that typically takes a few hours, post-op ICU/ward monitoring, and lifelong immunosuppressive medications to prevent rejection. Regular follow-up includes blood tests and clinic visits.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Benefits & risks</h4>
+        <p>Benefits include freedom from dialysis and improved lifestyle. Risks include surgical complications, infection, and medication side effects; transplant teams monitor and manage these closely.</p>
+      `
+                },
+
+                "dialysis": {
+                    title: "Dialysis (Hemodialysis & Peritoneal Dialysis)",
+                    image: "https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Renal replacement therapy that removes waste and excess fluid; available as center-based hemodialysis or home peritoneal dialysis.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Overview</h3>
+        <p>Dialysis performs many kidney functions when kidneys fail. Hemodialysis (HD) filters blood via a machine in a center. Peritoneal dialysis (PD) uses the peritoneal membrane at home.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Hemodialysis (HD)</h4>
+        <p>Usually performed 3 times per week, each session ~4 hours. Requires vascular access (AV fistula, graft or central catheter). Staff monitor vitals, fluid removal and blood chemistry.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Peritoneal Dialysis (PD)</h4>
+        <p>Can be managed at home (CAPD/CCPD). Useful for patients who prefer independence or when vascular access is problematic.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">When is dialysis started?</h4>
+        <p>Based on symptoms, lab tests (e.g., high creatinine, uremia) and clinical judgement. The goal is to relieve uremic symptoms and manage fluid/electrolyte balance.</p>
+      `
+                },
+
+                "stones": {
+                    title: "Kidney Stone Management",
+                    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=80",
+                    intro: "We provide modern, minimally invasive management for kidney stones — plus metabolic workup to prevent recurrence.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Care pathway</h3>
+        <p>Evaluation includes imaging and stone analysis. Treatments range from conservative medical care to ESWL, ureteroscopy and PCNL depending on stone size and location.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Prevention</h4>
+        <p>Dietary adjustments, hydration advice and metabolic testing (24-hour urine) help reduce recurrence. Tailored plans are created by dietitians and nephrologists.</p>
+      `
+                },
+
+                "plasmapheresis": {
+                    title: "Plasmapheresis (Therapeutic Plasma Exchange)",
+                    image: "https://images.unsplash.com/photo-1582719478250-8e24b4f3f219?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Plasma exchange to remove pathogenic antibodies — used in select autoimmune conditions and transplant desensitization.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Indications</h3>
+        <p>Used for antibody-mediated glomerulonephritis, graft rejection management and pre-transplant desensitization in certain cases.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Process</h4>
+        <p>Experienced staff perform exchanges using apheresis machines; replacement fluid and close monitoring ensure safety.</p>
+      `
+                },
+
+                "biopsy": {
+                    title: "Kidney Biopsy & Imaging",
+                    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Image-guided renal biopsy is the gold standard for many kidney disease diagnoses — enabling targeted therapy.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Why biopsy?</h3>
+        <p>Biopsy provides tissue diagnosis for glomerular diseases, rejection, interstitial conditions and helps plan precise treatment.</p>
+
+        <h4 style="color:#16234f;margin-top:12px">Safety</h4>
+        <p>Ultrasound guidance minimizes risk. Patients are monitored post-procedure and given clear aftercare instructions.</p>
+      `
+                },
+
+                "vascular": {
+                    title: "Vascular Access Placement",
+                    image: "https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Creation and maintenance of durable vascular access for hemodialysis — AV fistula, grafts and catheter care.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Access options</h3>
+        <ul>
+          <li>AV fistula (preferred long-term access)</li>
+          <li>AV graft</li>
+          <li>Central venous catheter (short-term)</li>
+        </ul>
+
+        <p>We perform creation, surveillance and interventions to maintain function and reduce complications.</p>
+      `
+                },
+
+                "ckd": {
+                    title: "Chronic Kidney Disease (CKD) & Hypertension Care",
+                    image: "https://images.unsplash.com/photo-1562718505-2d3b5a4e9c3a?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Multi-disciplinary CKD clinic — focused on slowing disease progression and reducing complications.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Services</h3>
+        <ul>
+          <li>Blood pressure optimization</li>
+          <li>Medication review & dose adjustment</li>
+          <li>Anemia management</li>
+          <li>Bone & mineral disorder care</li>
+          <li>Dietitian & patient education</li>
+        </ul>
+      `
+                },
+
+                "diabetes": {
+                    title: "Diabetic Nephropathy Care",
+                    image: "https://images.unsplash.com/photo-1582719478327-7ac6afbb3e87?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Integrated care for diabetes-related kidney disease with early detection and kidney-protective strategies.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Approach</h3>
+        <p>Close glucose control, RAAS blockers when appropriate, SGLT2 inhibitors (where indicated) and routine screening for albuminuria and renal function.</p>
+      `
+                },
+
+                "aki": {
+                    title: "Acute Kidney Injury (AKI) Care",
+                    image: "https://images.unsplash.com/photo-1580910051071-9b0f9f0b5f1c?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Rapid diagnostic workup and supportive care to maximize kidney recovery and prevent progression to chronic disease.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Management</h3>
+        <p>Fluid & electrolyte optimization, treat underlying cause (infection, toxin, obstruction), and temporary dialysis if needed.</p>
+      `
+                },
+
+                "pediatrics": {
+                    title: "Pediatric Nephrology",
+                    image: "https://images.unsplash.com/photo-1582719478208-0d9bb07a18b2?auto=format&fit=crop&w=1400&q=80",
+                    intro: "Specialized kidney care for infants, children and adolescents with family-centered support.",
+                    content: `
+        <h3 style="color:#16234f;margin-top:0">Scope</h3>
+        <p>Congenital anomalies, nephrotic syndrome, recurrent UTIs, growth & nutrition support, and pediatric transplant programs.</p>
+      `
+                }
+            };
+
+            // read service ID from ?service=...
+            function getServiceId() {
+                const params = new URLSearchParams(window.location.search);
+                return params.get('service') || 'kidney-transplant';
+            }
+
+            // render page
+            function render() {
+                const id = getServiceId();
+                const s = services[id];
+                const titleEl = document.getElementById('serviceTitle');
+                const introEl = document.getElementById('serviceIntro');
+                const imgEl = document.getElementById('serviceImg');
+                const contentEl = document.getElementById('serviceContent');
+                const relatedEl = document.getElementById('related');
+
+                if (!s) {
+                    titleEl.textContent = 'Service not found';
+                    introEl.textContent = 'The requested service could not be found.';
+                    contentEl.innerHTML = '<p style="color:#6b7280">Please return to the services list.</p>';
+                    return;
+                }
+
+                titleEl.textContent = s.title;
+                introEl.textContent = s.intro;
+                imgEl.src = s.image;
+                imgEl.alt = s.title;
+                contentEl.innerHTML = s.content;
+
+                // render 3 related services
+                relatedEl.innerHTML = '';
+                const keys = Object.keys(services).filter(k => k !== id);
+                for (let i = 0; i < 3 && i < keys.length; i++) {
+                    const key = keys[i];
+                    const item = services[key];
+                    const card = document.createElement('a');
+                    card.href = 'service.html?service=' + key;
+                    card.style = 'flex:1 1 calc(33% - 12px);min-width:180px;max-width:300px;background:#fff;border-radius:10px;box-shadow:0 8px 20px rgba(12,20,40,0.06);display:flex;gap:12px;align-items:center;padding:10px;text-decoration:none;color:inherit';
+                    card.innerHTML = '<div style="width:84px;height:64px;background:url(' + item.image + ') center/cover;border-radius:8px;flex-shrink:0"></div><div><div style="font-weight:700;color:#16234f">' + item.title + '</div><div style="color:#6b7280;font-size:13px;margin-top:6px">' + item.intro.slice(0, 80) + '…</div></div>';
+                    relatedEl.appendChild(card);
+                }
+            }
+
+            // graceful fallback for missing query
+            render();
+
+            // mobile friendly: if screen narrow, stack hero
+            function adapt() {
+                const hero = document.getElementById('hero');
+                if (window.innerWidth < 760) hero.style.flexDirection = 'column';
+                else hero.style.flexDirection = 'row';
+            }
+            adapt();
+            window.addEventListener('resize', adapt);
+
+        })();
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

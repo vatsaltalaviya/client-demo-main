@@ -8,360 +8,493 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
         rel="stylesheet">
-          <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
-        rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body
     style="margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto;color:#142032;background:linear-gradient(180deg,#fbfefe 0%,#f0fbfb 100%);">
 
-    <!-- HEADER (placeholder - integrate your real header if needed) -->
-  <header>
-    <nav class="nav-main">
-      <!-- Top Bar -->
-      <div class="topbar">
-        <div class="container topbar-inner">
-          <div class="left">
-            <div class="row">
-              <i class="ri-map-pin-line"></i><span class="fw">SOVIN KIDNEY CLINIC, G 14/15, Race Course, Near MLA
-                Hostel</span>
+    <!-- HEADER -->
+    <header>
+        <nav class="nav-main">
+            <!-- Top Bar -->
+            <div class="topbar">
+                <div class="container topbar-inner">
+                    <div class="left">
+                        <div class="row">
+                            <i class="ri-map-pin-line"></i><span class="fw">SOVIN KIDNEY CLINIC, G 14/15, Race Course,
+                                Near MLA
+                                Hostel</span>
+                        </div>
+                        <div class="row">
+                            <i class="ri-phone-fill"></i><span class="fw">9548658489</span>
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="row">
-              <i class="ri-phone-fill"></i><span class="fw">9548658489</span>
+
+            <!-- Main Navigation Row -->
+            <div class="container nav-row">
+                <div class="brand">
+                    <img src="https://drbhavinbrahmbhatt.co.in/images/logo.png" alt="Logo" />
+                </div>
+
+                <button class="hamburger" id="menu-btn" aria-label="Open Menu" aria-expanded="false">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news-event.html">News Event</a></li>
+                    <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+
+                    <li>
+                        <a class="nolink" href="./services.html">Services </a>
+                    </li>
+                    <li>
+                        <a class="nolink" href="./kidney.html">About Kidney </a>
+                    </li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+
+                <!-- Mobile Menu (left-aligned drawer; CSS should handle .open) -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <a href="./index.html" class="mobile-link">Home</a>
+                    <a href="./news-event.html" class="mobile-link">News Event</a>
+                    <a href="./know-your-doctor.html" class="mobile-link">Know Your Doctor</a>
+                    <a href="./services.html" class="mobile-link">Services</a>
+                    <a href="./kidney.html" class="mobile-link">About Kidney</a>
+                    <a href="./contact-us.html" class="mobile-link">Contact Us</a>
+                </div>
             </div>
-          </div>
-          <ul class="social">
-            <li>
-              <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
-            </li>
-            <li>
-              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-            </li>
-            <li>
-              <a href="#" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
-            </li>
-          </ul>
-        </div>
+        </nav>
+    </header>
+
+        <section class="page-hero">
+    <div class="container">
+      <h1>Services</h1>
+      <div class="breadcrumb" aria-label="breadcrumb">
+        <a href="#"><i class="ri-home-5-line"></i> Home</a>
+        <span class="sep">›</span>
+        <span class="current">Services</span>
       </div>
+    </div>
+  </section>
 
-      <!-- Main Navigation Row -->
-      <div class="container nav-row">
-        <div class="brand">
-          <img src="https://drbhavinbrahmbhatt.co.in/images/logo.png" alt="Logo" />
-        </div>
+    <main style="max-width:1200px;margin:20px auto;padding:0 18px;">
 
-        <button class="hamburger" id="menu-btn" aria-label="Open Menu" aria-expanded="false">
-          <i class="ri-menu-line"></i>
-        </button>
+        <!-- HERO -->
+        <section style="display:flex;flex-direction:column;gap:18px;margin-bottom:18px;padding-inline:16px">
 
-        <!-- Desktop Menu -->
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./news-event.html">News Event</a></li>
-          <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+            <!-- Hero Section -->
+            <div style="
+    border-radius:14px;
+    overflow:hidden;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    padding:clamp(20px,5vw,36px);
+    background:
+      linear-gradient(180deg,rgba(6,32,74,0.9),rgba(0,60,69,0.9)),
+      url('https://images.unsplash.com/photo-1635776063302-85027eb18d8a?auto=format&fit=crop&w=1600&q=80') center/cover;
+    color:#fff;
+  ">
 
-          <li>
-            <a class="nolink" href="./services.html">Services </a>
-          </li>
-          <li>
-            <a class="nolink" href="./kidney.html">About Kidney </a>
-          </li>
-          <li><a href="./contact-us.html">Contact Us</a></li>
-        </ul>
+                <!-- Left Text -->
+                <div style="
+      flex:1 1 320px;
+      max-width:820px;
+      text-align:left;
+    ">
+                    <div style="
+        display:inline-block;
+        padding:8px 12px;
+        border-radius:999px;
+        background:rgba(255,255,255,0.08);
+        font-weight:700;
+        margin-bottom:10px;
+        font-size:clamp(12px,2vw,14px);
+      ">Our Services</div>
 
-        <!-- Mobile Menu (left-aligned drawer; CSS should handle .open) -->
-        <div class="mobile-menu" id="mobile-menu">
-          <a href="./index.html" class="mobile-link">Home</a>
-          <a href="./news-event.html" class="mobile-link">News Event</a>
-          <a href="./know-your-doctor.html" class="mobile-link">Know Your Doctor</a>
-          <a href="./services.html" class="mobile-link">Services</a>
-          <a href="./kidney.html" class="mobile-link">About Kidney</a>
-          <a href="./contact-us.html" class="mobile-link">Contact Us</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+                    <h1 style="
+        font-family:Poppins, sans-serif;
+        font-size:clamp(22px,4vw,34px);
+        margin:6px 0 8px;
+        line-height:1.15;
+      ">Comprehensive Kidney Care — Transplant, Dialysis & Specialized Services</h1>
 
-    <main style="max-width:1200px;margin:20px auto;padding:0 18px">
+                    <p style="
+        opacity:0.95;
+        max-width:64ch;
+        margin-bottom:12px;
+        font-size:clamp(13px,2vw,16px);
+      ">We provide full-spectrum care for kidney patients — from prevention and diagnostics to advanced therapies like
+                        transplantation and dialysis. Click a card to view full details on a dedicated page.</p>
 
-        <section style="display:flex;flex-direction:column;gap:18px;margin-bottom:18px;">
-            <div
-                style="border-radius:14px;overflow:hidden;display:flex;align-items:center;gap:18px;padding:36px;background:
-        linear-gradient(180deg,rgba(6,32,74,0.9),rgba(0,60,69,0.9)),
-        url('https://images.unsplash.com/photo-1635776063302-85027eb18d8a?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;">
-                <div style="flex:1;max-width:820px">
-                    <div
-                        style="display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.08);font-weight:700;margin-bottom:10px">
-                        Our Services</div>
-                    <h1 style="font-family:Poppins;font-size:34px;margin:6px 0 8px;line-height:1.05">Comprehensive
-                        Kidney Care — Transplant, Dialysis, & Specialized Services</h1>
-                    <p style="opacity:0.95;max-width:64ch;margin-bottom:12px">We provide full-spectrum care for kidney
-                        patients — from prevention and diagnostics to advanced therapies like transplantation and
-                        dialysis. Click a card to read details below.</p>
-                    <div style="display:flex;gap:10px;flex-wrap:wrap">
-                        <button onclick="scrollToGrid()"
-                            style="padding:10px 14px;border-radius:10px;border:0;background:#00a89f;color:#fff;font-weight:700;cursor:pointer">View
-                            Services</button>
-                        <a href="#contact"
-                            style="padding:10px 14px;border-radius:10px;background:rgba(255,255,255,0.12);color:#fff;text-decoration:none;font-weight:700">Contact
-                            Clinic</a>
+                    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+                        <a href="#servicesGrid" style="
+          padding:10px 16px;
+          border-radius:10px;
+          border:0;
+          background:#00a89f;
+          color:#fff;
+          font-weight:700;
+          text-decoration:none;
+          font-size:clamp(13px,2vw,15px);
+          text-align:center;
+          flex:1 1 140px;
+          max-width:200px;
+        ">View Services</a>
+
+                        <a href="service.html?service=kidney-transplant" style="
+          padding:10px 16px;
+          border-radius:10px;
+          background:rgba(255,255,255,0.12);
+          color:#fff;
+          text-decoration:none;
+          font-weight:700;
+          font-size:clamp(13px,2vw,15px);
+          text-align:center;
+          flex:1 1 180px;
+          max-width:240px;
+        ">Example: Transplant Page</a>
                     </div>
                 </div>
 
-                <div
-                    style="width:260px;flex-shrink:0;background:linear-gradient(180deg,#fff,#f7fbff);padding:14px;border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,0.12);color:#16234f">
-                    <img src="./image/dr_bhavin.png"
-                        alt="doctor" style="width:100%;height:180px;object-fit:contain;border-radius:8px">
-                    <div style="margin-top:12px;font-weight:700">Dr Bhavin Brahmbhatt</div>
-                    <div style="color:#6b7280;font-size:13px;margin-top:4px">Consultant Nephrologist & Transplant
-                        Physician</div>
+                <!-- Doctor Card -->
+                <div style="
+      flex:0 1 260px;
+      background:linear-gradient(180deg,#fff,#f7fbff);
+      padding:14px;
+      border-radius:12px;
+      box-shadow:0 12px 34px rgba(0,0,0,0.12);
+      color:#16234f;
+      text-align:center;
+      width:100%;
+      max-width:280px;
+    ">
+                    <img src='./image/dr_bhavin.png' alt='doctor' style="
+        width:100%;
+        height:auto;
+        max-height:200px;
+        object-fit:contain;
+        border-radius:8px;
+      ">
+                    <div style="margin-top:12px;font-weight:700;font-size:clamp(14px,2vw,16px)">Dr Bhavin Brahmbhatt
+                    </div>
+                    <div style="
+        color:#6b7280;
+        font-size:clamp(12px,1.8vw,13px);
+        margin-top:4px;
+      ">Consultant Nephrologist & Transplant Physician</div>
                 </div>
             </div>
 
-            <!-- short intro -->
-            <div
-                style="background:#fff;padding:14px;border-radius:12px;box-shadow:0 8px 26px rgba(12,20,40,0.06);display:flex;justify-content:space-between;align-items:center;gap:12px">
-                <div style="flex:1">
-                    <strong style="font-size:15px;color:#16234f">Comprehensive care — personalized for each
-                        patient</strong>
-                    <div style="color:#6b7280;margin-top:6px">Click any card below to open a detailed view of that
-                        service. Each detail panel includes indications, procedures, benefits and what to expect.</div>
+            <!-- Info Bar -->
+            <div style="
+    background:#fff;
+    padding:clamp(10px,3vw,14px);
+    border-radius:12px;
+    box-shadow:0 8px 26px rgba(12,20,40,0.06);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  ">
+                <div style="flex:1 1 280px;">
+                    <strong style="
+        font-size:clamp(14px,2.2vw,15px);
+        color:#16234f;
+        display:block;
+        margin-bottom:4px;
+      ">Comprehensive care — personalized for each patient</strong>
+                    <div style="
+        color:#6b7280;
+        font-size:clamp(12px,2vw,14px);
+        line-height:1.5;
+      ">Click any card below to open a separate page with complete details for that service, including indications,
+                        procedures, benefits and frequently asked questions.</div>
                 </div>
-                <div style="min-width:160px;text-align:right">
-                    <a href="#"
-                        style="display:inline-block;padding:10px 14px;border-radius:10px;background:#6b3fa0;color:#fff;text-decoration:none;font-weight:700">Download
-                        Services PDF</a>
+
+                <div style="
+      flex:0 1 auto;
+      min-width:160px;
+      text-align:right;
+    ">
+                    <a href="#" style="
+        display:inline-block;
+        padding:10px 14px;
+        border-radius:10px;
+        background:#6b3fa0;
+        color:#fff;
+        text-decoration:none;
+        font-weight:700;
+        font-size:clamp(13px,2vw,15px);
+      ">Download Services PDF</a>
                 </div>
             </div>
+
         </section>
 
-        <!-- SERVICES GRID -->
+
+        <!-- Services Grid -->
         <section id="servicesGrid" style="display:flex;flex-wrap:wrap;gap:18px;justify-content:flex-start">
-            <!-- Card Template repeated - each card includes data-id -->
-            <!-- Card 1: Kidney Transplantation -->
-            <article data-id="kidney-transplant" role="button" tabindex="0"
+            <!-- Use the same set of cards as before, each has data-id and link to detail page -->
+            <!-- Card markup repeated for each service -->
+            <!-- Card 1 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1582719478250-8e24b4f3f219?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Kidney Transplantation
-                    </h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Definitive treatment for end-stage kidney
-                        disease — living and deceased donor programs, paired exchange & ABO-incompatible protocols.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('kidney-transplant')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Transplant</span>
+                <a href="service.html?service=kidney-transplant"
+                    style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1582719478250-8e24b4f3f219?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Kidney
+                            Transplantation</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Definitive treatment for end-stage
+                            kidney disease — living and deceased donor programs, paired exchange & ABO-incompatible
+                            protocols.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Transplant</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 2: Dialysis -->
-            <article data-id="dialysis" role="button" tabindex="0"
+            <!-- Card 2 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Dialysis (HD & PD)</h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Hemodialysis and peritoneal dialysis
-                        options, vascular access care, and home-based PD programs with training and support.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('dialysis')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Dialysis</span>
+                <a href="service.html?service=dialysis" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Dialysis (HD & PD)
+                        </h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Hemodialysis and peritoneal dialysis
+                            options, vascular access care, and home-based PD programs with training and support.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Dialysis</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 3: Kidney Stone Management -->
-            <article data-id="stones" role="button" tabindex="0"
+            <!-- Card 3 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Kidney Stone Management
-                    </h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Modern shockwave lithotripsy, endourology,
-                        and medical stone prevention plans tailored to stone type and anatomy.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('stones')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Stones</span>
+                <a href="service.html?service=stones" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Kidney Stone
+                            Management</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Shockwave lithotripsy, ureteroscopy and
+                            PCNL with follow-up prevention plans.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Stones</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 4: Plasmapheresis -->
-            <article data-id="plasmapheresis" role="button" tabindex="0"
+            <!-- Card 4 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1582719478250-8e24b4f3f219?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Plasmapheresis
-                        (Apheresis)</h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Plasma exchange therapies for
-                        antibody-mediated diseases, transplant desensitization and select autoimmune kidney conditions.
-                    </p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('plasmapheresis')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Apheresis</span>
+                <a href="service.html?service=plasmapheresis" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1582719478250-8e24b4f3f219?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Plasmapheresis
+                            (Apheresis)</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Plasma exchange therapies for autoimmune
+                            kidney disease and transplant desensitization.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Apheresis</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 5: Kidney Biopsy & Diagnostics -->
-            <article data-id="biopsy" role="button" tabindex="0"
+            <!-- Card 5 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Kidney Biopsy & Imaging
-                    </h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Ultrasound, Doppler, CT and percutaneous
-                        renal biopsy for accurate diagnosis and personalized treatment planning.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('biopsy')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Diagnostics</span>
+                <a href="service.html?service=biopsy" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Kidney Biopsy &
+                            Imaging</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Ultrasound, Doppler, CT and renal biopsy
+                            for precise diagnosis and treatment planning.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Diagnostics</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 6: Vascular Access & AV Fistula -->
-            <article data-id="vascular" role="button" tabindex="0"
+            <!-- Card 6 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Vascular Access
-                        Placement</h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Surgical AV fistula/graft creation, catheter
-                        care and troubleshooting for safe, durable dialysis access.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('vascular')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Access</span>
+                <a href="service.html?service=vascular" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Vascular Access
+                            Placement</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Surgical AV fistula/graft creation,
+                            catheter care and troubleshooting for dialysis access.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Access</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 7: CKD & Hypertension Management -->
-            <article data-id="ckd" role="button" tabindex="0"
+            <!-- Card 7 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1562718505-2d3b5a4e9c3a?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">CKD & Hypertension Care
-                    </h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Comprehensive chronic kidney disease clinics
-                        — BP control, medication optimization, anemia management and cardiovascular risk reduction.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('ckd')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">CKD</span>
+                <a href="service.html?service=ckd" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1562718505-2d3b5a4e9c3a?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">CKD & Hypertension
+                            Care</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">BP control, anemia management and
+                            multi-disciplinary CKD clinics to slow progression.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">CKD</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 8: Diabetic Nephropathy -->
-            <article data-id="diabetes" role="button" tabindex="0"
+            <!-- Card 8 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1582719478327-7ac6afbb3e87?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Diabetic Nephropathy
-                    </h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Early detection, glycemic control strategies
-                        and kidney-protective therapies to slow progression and prevent complications.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('diabetes')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Diabetes</span>
+                <a href="service.html?service=diabetes" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1582719478327-7ac6afbb3e87?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Diabetic Nephropathy
+                        </h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Early detection and kidney-protective
+                            therapies to slow diabetic kidney disease.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Diabetes</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 9: Acute Kidney Injury -->
-            <article data-id="aki" role="button" tabindex="0"
+            <!-- Card 9 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1580910051071-9b0f9f0b5f1c?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Acute Kidney Injury
-                        (AKI)</h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Rapid assessment and supportive care for AKI
-                        — fluid management, toxin removal and temporary dialysis if required.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('aki')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">AKI</span>
+                <a href="service.html?service=aki" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1580910051071-9b0f9f0b5f1c?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Acute Kidney Injury
+                            (AKI)</h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Rapid assessment, stabilization and
+                            temporary renal support to maximize recovery.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">AKI</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Card 10: Pediatric Nephrology -->
-            <article data-id="pediatrics" role="button" tabindex="0"
+            <!-- Card 10 -->
+            <article
                 style="flex:1 1 calc(33.333% - 18px);min-width:240px;max-width:360px;background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 8px 26px rgba(12,20,40,0.06);transition:transform .28s,box-shadow .28s;">
-                <div
-                    style="height:160px;background:url('https://images.unsplash.com/photo-1582719478208-0d9bb07a18b2?auto=format&fit=crop&w=1200&q=80') center/cover;">
-                </div>
-                <div style="padding:14px;">
-                    <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Pediatric Nephrology
-                    </h3>
-                    <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Specialized care for children with kidney
-                        disease: congenital anomalies, nephrotic syndrome, UTI and growth & nutrition support.</p>
-                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
-                        <button onclick="openDetail('pediatrics')"
-                            style="padding:9px 12px;border-radius:10px;background:#00a89f;border:0;color:#fff;font-weight:700;cursor:pointer">Learn
-                            more</button>
-                        <span style="font-size:13px;color:#8b98a6">Pediatrics</span>
+                <a href="service.html?service=pediatrics" style="display:block;color:inherit;text-decoration:none;">
+                    <div
+                        style="height:160px;background:url('https://images.unsplash.com/photo-1582719478208-0d9bb07a18b2?auto=format&fit=crop&w=1200&q=80') center/cover;">
                     </div>
-                </div>
+                    <div style="padding:14px;">
+                        <h3 style="margin:0 0 8px;font-size:18px;color:#16234f;font-family:Poppins">Pediatric Nephrology
+                        </h3>
+                        <p style="margin:0 0 12px;color:#6b7280;font-size:14px">Care for infants and children with
+                            congenital and acquired kidney diseases; family-centered transplant programs.</p>
+                        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                            <span
+                                style="padding:9px 12px;border-radius:10px;background:#00a89f;color:#fff;font-weight:700">View
+                                Details</span>
+                            <span style="font-size:13px;color:#8b98a6">Pediatrics</span>
+                        </div>
+                    </div>
+                </a>
             </article>
 
         </section>
 
-        <!-- DETAILS AREA (expands / scrolls into view) -->
-        <section id="serviceDetail" style="margin-top:22px;min-height:80px;transition:all .36s;overflow:hidden;">
-        </section>
-
-        <!-- CONTACT quick area -->
-        <section id="contact"
+        <!-- Small contact CTA -->
+        <section
             style="margin-top:22px;padding:18px;background:#fff;border-radius:12px;box-shadow:0 8px 26px rgba(12,20,40,0.06);display:flex;justify-content:space-between;align-items:center;gap:12px">
             <div>
                 <div style="font-weight:700;color:#16234f">Need a consultation?</div>
                 <div style="color:#6b7280;margin-top:6px">Call or book an appointment — our team will guide you through
-                    tests, treatment options and insurance / financing queries.</div>
+                    tests and treatment options.</div>
             </div>
             <div style="text-align:right">
                 <a href="tel:+919548658489"
@@ -372,7 +505,7 @@
 
     </main>
 
-    <!-- FOOTER (placeholder) -->
+    <!-- FOOTER -->
     <footer class="container">
         <div class="footer-wrap">
             <div class="footer-grid">
@@ -383,11 +516,13 @@
                 <div>
                     <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Know Your Doctor</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Brochure About Kidney</a></li>
-                        <li><a href="#">Brochure Kidney Transplant</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./know-your-doctor.html">Know Your Doctor</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                        <li><a href="./brochure-aboutyourkidney.pdf" target="_blank" download>Brochure About Kidney</a>
+                        </li>
+                        <li><a href="./brochure-Kidney-Transplant-Brochure.pdf" target="_blank" download>Brochure Kidney
+                                Transplant</a></li>
                     </ul>
                 </div>
 
@@ -435,201 +570,41 @@
         </div>
     </footer>
 
+    <!-- small inline script: subtle hover scale for cards and keyboard support -->
     <script>
         (function () {
-            // details content map
-            const details = {
-                "kidney-transplant": {
-                    title: "Kidney Transplantation",
-                    image: "https://images.unsplash.com/photo-1580281657523-2a9b077e6b6a?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Kidney transplantation is the treatment of choice for End-Stage Kidney Disease (ESKD).</p>
-        <p style="color:#6b7280">A healthy kidney (from a living or deceased donor) is surgically placed to replace failed renal function. Transplant offers better quality of life, fewer dietary restrictions and improved long-term outcomes compared with long-term dialysis.</p>
-        <h4 style="color:#16234f;margin-top:12px">Who is eligible?</h4>
-        <p style="color:#6b7280">Patients with irreversible kidney failure (ESKD) who are medically fit and free from major contraindications. AKI patients expected to recover are not candidates.</p>
-        <h4 style="color:#16234f;margin-top:10px">Types & options</h4>
-        <ul style="color:#6b7280">
-          <li><strong>Living donor:</strong> Typically better outcomes; can be planned.</li>
-          <li><strong>Deceased donor:</strong> Requires waiting list & matching.</li>
-          <li><strong>Paired exchange & ABO-incompatible protocols:</strong> Advanced options for incompatible donors.</li>
-        </ul>
-        <h4 style="color:#16234f;margin-top:10px">Advantages</h4>
-        <ul style="color:#6b7280">
-          <li>Better replacement of renal function and higher life expectancy</li>
-          <li>Freedom from dialysis & reduced long-term cost</li>
-          <li>Improved quality of life and fewer restrictions</li>
-        </ul>
-      `
-                },
-                "dialysis": {
-                    title: "Dialysis (Hemodialysis & Peritoneal Dialysis)",
-                    image: "https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Dialysis replaces some kidney functions when kidneys fail.</p>
-        <p style="color:#6b7280">Hemodialysis (HD) uses a dialyzer and machine to filter blood in a clinic; Peritoneal dialysis (PD) uses the peritoneal membrane at home. Dialysis removes waste, excess fluid and corrects electrolytes but does not replace hormonal functions.</p>
-        <h4 style="color:#16234f;margin-top:12px">When is dialysis needed?</h4>
-        <p style="color:#6b7280">When kidney function falls sufficiently that toxins and fluid accumulate causing uremic symptoms — or based on lab evaluation and clinical judgement.</p>
-        <h4 style="color:#16234f;margin-top:10px">Types</h4>
-        <ul style="color:#6b7280">
-          <li><strong>Hemodialysis (HD):</strong> Usually center-based, 3x/week sessions of ~4 hours.</li>
-          <li><strong>Peritoneal Dialysis (PD):</strong> Home-based CAPD/CCPD or intermittent modalities.</li>
-          <li><strong>Continuous therapies:</strong> For critically ill patients (CRRT/CVVHD etc.).</li>
-        </ul>
-      `
-                },
-                "stones": {
-                    title: "Kidney Stone Management",
-                    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Modern diagnosis and minimally invasive management of urinary stones.</p>
-        <p style="color:#6b7280">We offer imaging-guided assessment, medical management, shockwave lithotripsy (ESWL), ureteroscopy and percutaneous nephrolithotomy (PCNL) depending on stone size, location and composition.</p>
-        <h4 style="color:#16234f;margin-top:10px">Prevention</h4>
-        <p style="color:#6b7280">Dietary measures, metabolic evaluation and tailored preventive plans to reduce recurrence.</p>
-      `
-                },
-                "plasmapheresis": {
-                    title: "Plasmapheresis",
-                    image: "https://images.unsplash.com/photo-1582719478250-8e24b4f3f219?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Therapeutic plasma exchange for antibody-mediated diseases and transplant desensitization.</p>
-        <p style="color:#6b7280">Used in select autoimmune kidney conditions and in protocols to reduce antibody levels before or after transplant. Procedures are performed by trained staff with careful monitoring.</p>
-      `
-                },
-                "biopsy": {
-                    title: "Kidney Biopsy & Imaging",
-                    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Precise diagnosis with imaging and percutaneous renal biopsy.</p>
-        <p style="color:#6b7280">Ultrasound, Doppler and CT help plan biopsies and assess anatomy. Biopsy provides tissue diagnosis (glomerular diseases, rejection, interstitial disease) guiding targeted therapy.</p>
-      `
-                },
-                "vascular": {
-                    title: "Vascular Access Placement",
-                    image: "https://images.unsplash.com/photo-1580281472734-8b9f3a1a2c6b?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Durable vascular access for hemodialysis: AV fistulas, grafts and catheter care.</p>
-        <p style="color:#6b7280">We perform surgical creation, monitoring and interventions for access dysfunction to ensure safe dialysis sessions.</p>
-      `
-                },
-                "ckd": {
-                    title: "Chronic Kidney Disease & Hypertension Care",
-                    image: "https://images.unsplash.com/photo-1562718505-2d3b5a4e9c3a?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Multi-disciplinary CKD clinic focusing on slowing progression and reducing complications.</p>
-        <p style="color:#6b7280">Blood pressure control, anemia management, bone-mineral disorders, dietitian support and cardiovascular risk reduction are integral to care.</p>
-      `
-                },
-                "diabetes": {
-                    title: "Diabetic Nephropathy",
-                    image: "https://images.unsplash.com/photo-1582719478327-7ac6afbb3e87?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Integrated care for diabetes-related kidney disease.</p>
-        <p style="color:#6b7280">Early detection strategies, aggressive glycemic control, blood pressure optimization and use of kidney-protective medications to slow progression.</p>
-      `
-                },
-                "aki": {
-                    title: "Acute Kidney Injury (AKI) Care",
-                    image: "https://images.unsplash.com/photo-1580910051071-9b0f9f0b5f1c?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Rapid assessment & targeted treatment for sudden kidney dysfunction.</p>
-        <p style="color:#6b7280">Fluid and electrolyte management, identification of reversible causes, and temporary dialysis when needed — with the goal of recovery wherever possible.</p>
-      `
-                },
-                "pediatrics": {
-                    title: "Pediatric Nephrology",
-                    image: "https://images.unsplash.com/photo-1582719478208-0d9bb07a18b2?auto=format&fit=crop&w=1400&q=80",
-                    content: `
-        <p style="color:#16234f;margin-top:0;font-weight:700">Kidney care for infants, children and adolescents.</p>
-        <p style="color:#6b7280">Management of congenital anomalies, nephrotic syndrome, UTIs, growth/nutrition counseling and family-centered transplant programs when required.</p>
-      `
-                }
-            };
-
-            // reference elements
-            const detailArea = document.getElementById('serviceDetail');
-            const cards = document.querySelectorAll('[data-id]');
-
-            // add hover transform and keyboard accessibility
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.style.transform = 'translateY(-6px)';
-                    card.style.boxShadow = '0 18px 40px rgba(12,20,40,0.12)';
+            const cards = document.querySelectorAll('article');
+            cards.forEach(c => {
+                c.addEventListener('mouseenter', () => {
+                    c.style.transform = 'translateY(-6px)';
+                    c.style.boxShadow = '0 18px 40px rgba(12,20,40,0.12)';
                 });
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = 'translateY(0)';
-                    card.style.boxShadow = '0 8px 26px rgba(12,20,40,0.06)';
+                c.addEventListener('mouseleave', () => {
+                    c.style.transform = '';
+                    c.style.boxShadow = '0 8px 26px rgba(12,20,40,0.06)';
                 });
-                // open on Enter/Space for accessibility
-                card.addEventListener('keydown', (e) => {
+                c.addEventListener('keydown', (e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
-                        const id = card.getAttribute('data-id');
-                        openDetail(id);
+                        const link = c.querySelector('a');
+                        if (link) link.click();
                     }
                 });
             });
 
-            // Open detail panel
-            window.openDetail = function (id) {
-                const info = details[id];
-                if (!info) return;
-                // build HTML content
-                const html = `
-      <div style="background:#fff;border-radius:12px;box-shadow:0 12px 34px rgba(12,20,40,0.08);overflow:hidden;">
-        <div style="display:flex;flex-wrap:wrap">
-          <div style="flex:1;min-width:320px;padding:22px;">
-            <h2 style="margin:0 0 8px;font-family:Poppins;color:#16234f">${info.title}</h2>
-            <div style="color:#6b7280;line-height:1.6">${info.content}</div>
-            <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
-              <a href="tel:+919548658489" style="padding:10px 14px;border-radius:10px;background:#00a89f;color:#fff;text-decoration:none;font-weight:700">Call Clinic</a>
-              <a href="#" style="padding:10px 14px;border-radius:10px;border:1px solid #e6eef0;background:#fff;color:#16234f;text-decoration:none;font-weight:700">Book Appointment</a>
-            </div>
-          </div>
-          <div style="width:360px;min-width:260px;display:flex;align-items:center;justify-content:center;padding:18px;background:linear-gradient(180deg,#fbfdff,#fff)">
-            <img src="${info.image}" alt="${info.title}" style="width:100%;height:240px;object-fit:cover;border-radius:10px;box-shadow:0 10px 30px rgba(10,20,40,0.08)">
-          </div>
-        </div>
-      </div>
-    `;
-                // animate replace
-                detailArea.style.maxHeight = '0px';
-                detailArea.innerHTML = html;
-                // allow paint then animate open
-                setTimeout(() => {
-                    detailArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    detailArea.style.transition = 'max-height 0.5s ease';
-                    detailArea.style.maxHeight = '2000px';
-                }, 80);
-            };
-
-            // helper to scroll to services grid
-            window.scrollToGrid = function () {
-                document.getElementById('servicesGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
-            };
-
-            // small responsive helper: if screen narrow, make cards full width
-            function applyResponsive() {
-                const width = window.innerWidth;
-                document.querySelectorAll('[data-id]').forEach(card => {
-                    if (width < 760) {
-                        card.style.flex = '1 1 100%';
-                        card.style.maxWidth = '100%';
-                    } else if (width < 1000) {
-                        card.style.flex = '1 1 calc(50% - 18px)';
-                        card.style.maxWidth = '560px';
-                    } else {
-                        card.style.flex = '1 1 calc(33.333% - 18px)';
-                        card.style.maxWidth = '360px';
-                    }
+            // responsive: adjust card flex basis
+            function adjust() {
+                const w = window.innerWidth;
+                cards.forEach(c => {
+                    if (w < 760) { c.style.flex = '1 1 100%'; c.style.maxWidth = '100%'; }
+                    else if (w < 1000) { c.style.flex = '1 1 calc(50% - 18px)'; c.style.maxWidth = '560px'; }
+                    else { c.style.flex = '1 1 calc(33.333% - 18px)'; c.style.maxWidth = '360px'; }
                 });
             }
-            applyResponsive();
-            window.addEventListener('resize', applyResponsive);
-
-            // open first card by default (optional)
-            // openDetail('kidney-transplant');
-
+            adjust();
+            window.addEventListener('resize', adjust);
         })();
     </script>
+
     <script src="./script.js"></script>
 
 </body>
